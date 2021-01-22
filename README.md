@@ -1,2 +1,7 @@
-# jenkins-grovy
-![20191004152038080_0001](https://user-images.githubusercontent.com/53195216/105552022-6f1f8d80-5d14-11eb-8861-cf8748f9be0b.jpg)
+# Ci/Cd pipline on grovy script
+##Seed Job
+* Create Seed Job and put Jenkinsfile, all required jobs will be created created from groovy script:
+![image](https://user-images.githubusercontent.com/53195216/105552923-b78b7b00-5d15-11eb-8991-c083f23f6d78.png)
+---
+![image](https://user-images.githubusercontent.com/53195216/105553027-e0137500-5d15-11eb-996b-f5e67e1182a0.png)
+
