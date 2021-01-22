@@ -22,7 +22,7 @@ sudo ls
 if sudo kubectl get all | grep webdeploy
 then
 sudo kubectl delete all -l app=webdeploy
-sudo kubectl delete pvc -l webdeploy
+sudo kubectl delete pvc -l app=webdeploy
 sudo kubectl create -f /root/DevOpsAL/webdeploy.yml
 sleep 10
 sudo kubectl get all
