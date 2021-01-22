@@ -1,13 +1,13 @@
 job("Job1_gitpull") {
 description ("Pulls the code from GitHub")
   scm{
-    github('rasulkarimov/jenkins-groovy','master')
+    github('rasulkarimov/jenkins-groovy','main')
   }
   triggers {
         scm('* * * * *')
     }
   steps {
-    shell('sudo -rf /root/DevOpsAL/*  && sudo cp -rvf * /root/DevOpsAL/')
+    shell('sudo rm -rf /root/DevOpsAL/*  && sudo cp -rvf * /root/DevOpsAL/')
   }
 }
 
