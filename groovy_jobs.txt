@@ -7,7 +7,7 @@ description ("Pulls the code from GitHub")
         scm('* * * * *')
     }
   steps {
-    shell('sudo cp -rvf * /root/DevOpsAL/')
+    shell('sudo -rf /root/DevOpsAL/*  && sudo cp -rvf * /root/DevOpsAL/')
   }
 }
 
