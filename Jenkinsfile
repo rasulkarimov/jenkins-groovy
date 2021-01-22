@@ -41,7 +41,7 @@ description ("Test the code")
     upstream('Job2_deploy','SUCCESS')
     }
     steps {
-      shell('''export status=$(curl -s -o /dev/null -w "%{http_code}" http://$(kubectl get nodes -o jsonpath='{ ..status.addresses[0].address }'):30050/index.html)
+      shell('''export status=$(curl -s -o /dev/null -w "%{http_code}" http://$(sudo kubectl get nodes -o jsonpath='{ ..status.addresses[0].address }'):30050/index.html)
 if [ $status -eq 200 ]
 then
 exit 0
